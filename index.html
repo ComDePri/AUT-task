@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Item Listing Game</title>
+    <link rel="stylesheet" href="static/style.css" />
+</head>
+<body>
+<div id="instruction" style="text-align: center; max-width: 800px; margin: 60px auto; font-size: 1rem; line-height: 1.6;">
+    <p>
+        <br>In this task, you'll be asked to come up with as many original and creative uses for common objects as you can. The goal is to come up with creative ideas, which are ideas that strike people as clever, unusual, interesting, uncommon, humorous, innovative, or different.
+        <br>You will be asked to type uses for 3 different objects.
+        <br>You will have 2 minutes to type as many creative uses for each object as you can -- just press ENTER after each one
+        <br>Press Start when you are ready.
+    </p>
+    <button onclick="startGame()" style="padding: 10px 30px; font-size: 1.2rem; border-radius: 10px; background-color: #4CAF50; color: white; border: none; cursor: pointer;">
+        Start
+    </button>
+</div>
+
+<div id="timer" style="display: none; position: fixed; top: 20px; right: 40px; background: white; padding: 10px 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); font-size: 1.5rem; z-index: 1000;"></div>
+
+<div id="input-area" style="display: none;">
+    <div id="instructions-box" style="max-width: 800px; margin: auto; margin-bottom: 30px; padding: 20px; background-color: white; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); font-size: 1.1rem;">
+        <br>Your object is <strong id="category-name">Category</strong>.
+        <br>Please list all of the creative, unusual uses for the object you can think of. Press ENTER after each one.
+        <br>Press <strong>Enter</strong> after each one.
+    </div>
+    <form id="game-form" style="max-width: 800px; margin: auto;"></form>
+</div>
+
+<div id="clustering-phase" style="display: none; padding-top: 2rem;">
+    <h2>Group Your Items</h2>
+    <p>
+        <br>You’ll now see the list of answers you wrote earlier. Group them into clusters according to the themes or connections you had in mind.
+        <br>
+        <br>How to group items:
+        <br>• Click the first item in the cluster, then click the last item in the cluster — all items between will be grouped together.
+        <br>• You can only group items that are adjacent to each other in the list.
+        <br>• If an item should be in a group by itself, click it twice.
+        <br>• To ungroup a cluster and regroup it differently, click any item within that group — the grouping will then be reset.
+        <br>
+        <br>You can make as many groups as you like. There are no right or wrong answers.
+        <br>
+        <br>When you’re done, click <strong>Submit</strong>.
+    </p>
+    <ul id="cluster-list" class="cluster-list"></ul>
+    <button id="submit-clusters" disabled>Submit</button>
+</div>
+
+<script src="static/script.js"></script>
+</body>
+</html>

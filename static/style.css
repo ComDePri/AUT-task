@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 2rem;
+    color: #333;
+}
+
+#instruction, #input-area, #clustering-phase {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 2rem;
+    border-radius: 14px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 0.6rem;
+    font-size: 1rem;
+    margin-bottom: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+button {
+    background-color: #1976d2;
+    color: white;
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.cluster-list {
+    list-style: none;
+    padding: 0;
+}
+
+.cluster-item {
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin: 6px 0;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cluster-item:hover {
+    background-color: #f0f0f0;
+}
+
+#instructions-box {
+    max-width: 800px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    font-size: 1.1rem;
+}
+
+#game-form {
+    max-width: 600px;
+    margin: auto;
+}
+
+#timer {
+    position: fixed;
+    top: 20px;
+    right: 40px;
+    background: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-size: 1.5rem;
+    z-index: 1000;
+}
+
