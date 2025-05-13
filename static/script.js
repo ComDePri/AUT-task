@@ -1,5 +1,5 @@
 // === Variables ===
-const BUCKET_NAME = "verbal-fluency-2025";
+const BUCKET_NAME = "aut-2025";
 let data = [];
 let results = [];
 let timerInterval;
